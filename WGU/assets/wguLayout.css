@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+
+.competency {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: medium;
+	font-weight: bold;
+	font-variant: small-caps;
+}
+.competencyText {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: small;
+	font-style: normal;
+	font-weight: bold;
+}
+.Activity {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: large;
+	font-style: normal;
+	font-weight: bold;
+}
+.TimeToComplete {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-style:italic
+	font-size: small;
+	font-style: normal;
+	font-weight: bold;
+	font-size: x-small;
+}
+.Section {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: x-large;
+	font-weight: bold;
+}
+.Topic {
+	font-size: large;
+	font-weight: bold;
+}

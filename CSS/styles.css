@@ -1,0 +1,92 @@
+.expanding-div {
+	width: 20em;
+	height: 20em;
+	transition: all 0.5s linear;
+	-webkit-transition: all 0.5s linear;
+	border: 1px solid black;
+	overflow: hidden;
+	background-color: white;
+	z-index: 10;
+}
+.expanding-div/*:hover*/ {
+	width: 40em;
+	height: 20em;
+	background-color: white;
+	z-index: 1200;
+}
+.expanding-div * {
+	z-index: 1300;
+}
+.expanding-div > * {
+	width: 400px;
+}
+
+.positioner-div {
+	width: 200px;
+	max-width: 200px;
+/*	float: left;*/
+	margin: 1em;
+	background-color: white;
+	z-index: 9;
+	display: inline-block;
+}
+.left {
+	text-align: left;
+}
+body {
+	background-image:url(../wordpress/wp-content/themes/twentyeleven/images/headers/chessboard.jpg);
+}
+.main-page {
+	z-index: 2;
+	background-color: white;
+	display: inline-block;
+	width: 500px;
+}
+
+.colored-box {
+	width: 4em;
+	height: 4em;
+	position: absolute;
+}
+.colored-box:nth-child(1) {
+	background-color: red;
+	top: 10em;
+	left: 2em;
+	z-index: 70;
+}
+.colored-box:nth-child(2) {
+	background-color: orange;
+	top: 11em;
+	left: 3em;
+	z-index: 60;
+}
+.colored-box:nth-child(3) {
+	background-color: yellow;
+	top: 12em;
+	left: 4em;
+	z-index: 50;
+}
+.colored-box:nth-child(4) {
+	background-color: green;
+	top: 13em;
+	left: 5em;
+	z-index: 40;
+}
+.colored-box:nth-child(5) {
+	background-color: blue;
+	top: 14em;
+	left: 6em;
+	z-index: 30;
+}
+.colored-box:nth-child(6) {
+	background-color: indigo;
+	top: 15em;
+	left: 7em;
+	z-index: 20;
+}
+.colored-box:nth-child(7) {
+	background-color: violet;
+	top: 16em;
+	left: 8em;
+	z-index: 10;
+}
