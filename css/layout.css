@@ -1,0 +1,56 @@
+img, object, embed, video {
+	max-width: 100%;
+}
+.swipe-row {
+	width: 100%;
+	white-space: nowrap;
+	overflow: scroll;
+	/*	These lines are commented out
+ *		to provide functionality to
+ *		users who do not benefit from
+ *		jquery and would otherwise
+ *		not be able to scroll
+ *		horizontally (if the bars are
+ *		gone, they can't)
+ * 	overflow-x: hidden;
+ *	overflow-y: hidden;
+	*/
+}
+.swipe-row > * {
+	display: inline-block;
+	height: 10em;
+}
+.swipe-row > .swipe-row-element > a {
+	height: 100%;
+	max-height: 100%;
+}
+.swipe-row > .swipe-row-element > a > img {
+	height: 100%;
+	max-height: 100%;
+}
+/* Phone Layout: 480px and lower. */
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 87.36%;
+	padding-left: 1.82%;
+	padding-right: 1.82%;
+}
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+@media only screen and (min-width: 481px) {
+	.gridContainer {
+		width: 90.675%;
+		padding-left: 1.1625%;
+		padding-right: 1.1625%;
+	}
+}
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+@media only screen and (min-width: 769px) {
+	.gridContainer {
+		width: 88.5%;
+		max-width: 1232px;
+		padding-left: 0.75%;
+		padding-right: 0.75%;
+		margin: auto;
+	}
+}

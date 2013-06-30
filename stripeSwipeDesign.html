@@ -1,0 +1,196 @@
+<HTML>
+<HEAD>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Stripe-swipe Digest Interface Prototype</title>
+	<!---
+		This page is intended to express a design concept,
+		it is not intended to be the final release version
+		of that design.
+		
+		For a fully wrought and compatibility-tested
+		version more development time and bug testing will
+		be required.
+		
+		It is expected that the design criteria for this
+		project are;
+		1)	simple replication and incorportation into a
+			wide variety of content
+		2)	small footprint in regards to support,
+			meaning heavier use of built-in broswer
+			support and limited use of 3rd party add-ins
+			(such as flash or jquery)
+				2a)	It is assumed that these add-in
+					technologies will be available
+					however, not required.
+					Content will be accessible in
+					the event of their failure.
+		3)	documentation will be provided to explain
+			how and, where appropriate, why the pieces
+			of this prototype were included
+		4)	priority is given to a high degree of
+			functionality on mobile devices, meaning
+			that first considerations are accessibility
+			and ease of use on mobile phones, tablets
+			and similar devices.
+	--->
+	<link href="css/layout.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<!-- I tried this package first, but it didn't perform well on mobile. <script type='text/javascript' src='js/jquery.mousewheel.js'></script> -->
+	<script type='text/javascript' src="js/jquery.nicescroll.min.js"></script>
+	<script>
+		$(function() {
+			$(".swipe-row").css("overflow-x","hidden");
+			$(".swipe-row").css("overflow-y","hidden");
+			/*
+			This is from the first attempt.
+			$(".swipe-row").mousewheel(function(event, delta) {
+				this.scrollLeft -= (delta * 30);
+				event.preventDefault();
+			});
+			*/
+			$(".swipe-row").niceScroll();
+		});
+	</script>
+</HEAD>
+<BODY>
+	<div class="gridContainer clearfix">
+		<h3>Lesson 1 Material</h3>
+		<div class="swipe-row">
+			<!-- These rows are the element that gets the horizontal scroll -->
+			<div class="swipe-row-element"> <!-- 1 -->
+				<!-- These elements can contain virtually anything you like. I've added styling so they are the full height of the row, but that can be modified. If changed, it vertically aligns to the bottom. -->
+				<a href="http://openphoto.net/gallery/image.html?image_id=11187&image_size=1"><img src="http://openphoto.net/volumes/sizes/bmanojel/11187/1.jpg" /></a>	<!-- I've added images here to give an attractive appearance, but these are meant to be replaced with your actual content. -->
+			</div>
+			<div class="swipe-row-element"> <!-- 2 -->
+				<a href="http://openphoto.net/gallery/image.html?image_id=7081&image_size=1"><img src="http://openphoto.net/volumes/sizes/laurenz/7081/1.jpg" /></a>
+			</div>
+			<div class="swipe-row-element"> <!-- 3 -->
+				<a href="http://openphoto.net/gallery/image.html?image_id=10827&image_size=1"><img src="http://openphoto.net/volumes/sizes/prysme/10827/1.jpg" /></a>
+			</div>
+			<div class="swipe-row-element"> <!-- 4 -->
+				<a href="http://openphoto.net/gallery/image.html?image_id=11182&image_size=1"><img src="http://openphoto.net/volumes/sizes/bmanojel/11182/1.jpg" /></a>
+			</div>
+			<div class="swipe-row-element"> <!-- 5 -->
+				<a href="http://openphoto.net/gallery/image.html?image_id=12122&image_size=1"><img src="http://openphoto.net/volumes/sizes/epoupaert/12122/1.jpg" /></a>
+			</div>
+			<div class="swipe-row-element"> <!-- 6 -->
+				<a href="http://openphoto.net/gallery/image.html?image_id=12762&image_size=1"><img src="http://openphoto.net/volumes/sizes/mike/12762/1.jpg" /></a>
+			</div>
+			<div class="swipe-row-element"> <!-- 7 -->
+				<a href="http://openphoto.net/gallery/image.html?image_id=15299&image_size=1"><img src="http://openphoto.net/volumes/sizes/lello/15299/1.jpg" /></a>
+			</div>
+			<div class="swipe-row-element"> <!-- 8 -->
+				<a href="http://openphoto.net/gallery/image.html?image_id=15747&image_size=1"><img src="http://openphoto.net/volumes/sizes/maartenvanderlinde/15747/1.jpg" /></a>
+			</div>
+			<div class="swipe-row-element"> <!-- 9 -->
+				<a href="http://openphoto.net/gallery/image.html?image_id=16003&image_size=1"><img src="http://openphoto.net/volumes/sizes/michelev/16003/1.jpg" /></a>
+			</div>
+			<div class="swipe-row-element"> <!-- 10 -->
+				<a href="http://openphoto.net/gallery/image.html?image_id=18798&image_size=1"><img src="http://openphoto.net/volumes/sizes/shippuden/18798/1.jpg" /></a>
+			</div>
+			<div class="swipe-row-element"> <!-- 11 -->
+				<a href="http://openphoto.net/gallery/image.html?image_id=22396&image_size=1"><img src="http://openphoto.net/volumes/sizes/sarabbit/22396/1.jpg" /></a>
+			</div>
+			<div class="swipe-row-element"> <!-- 12 -->
+				<a href="http://openphoto.net/gallery/image.html?image_id=22866&image_size=1"><img src="http://openphoto.net/volumes/sizes/mike/22866/1.jpg" /></a>
+			</div>
+			<div class="swipe-row-element"> <!-- 13 -->
+				<a href="http://openphoto.net/gallery/image.html?image_id=22879&image_size=1"><img src="http://openphoto.net/volumes/sizes/mike/22879/1.jpg" /></a>
+			</div>
+			<div class="swipe-row-element"> <!-- 14 -->
+				<a href="http://openphoto.net/gallery/image.html?image_id=24569&image_size=1"><img src="http://openphoto.net/volumes/sizes/sarabbit/24569/1.jpg" /></a>
+			</div>
+		</div>
+		<h3>Lesson 2 Material</h3>
+		<div class="swipe-row">
+			<div class="swipe-row-element"> <!-- 1 -->
+				<a href="http://openphoto.net/gallery/image.html?image_id=11187&image_size=1"><img src="http://openphoto.net/volumes/sizes/bmanojel/11187/1.jpg" /></a>
+			</div>
+			<div class="swipe-row-element"> <!-- 2 -->
+				<a href="http://openphoto.net/gallery/image.html?image_id=7081&image_size=1"><img src="http://openphoto.net/volumes/sizes/laurenz/7081/1.jpg" /></a>
+			</div>
+			<div class="swipe-row-element"> <!-- 3 -->
+				<a href="http://openphoto.net/gallery/image.html?image_id=10827&image_size=1"><img src="http://openphoto.net/volumes/sizes/prysme/10827/1.jpg" /></a>
+			</div>
+			<div class="swipe-row-element"> <!-- 4 -->
+				<a href="http://openphoto.net/gallery/image.html?image_id=11182&image_size=1"><img src="http://openphoto.net/volumes/sizes/bmanojel/11182/1.jpg" /></a>
+			</div>
+			<div class="swipe-row-element"> <!-- 5 -->
+				<a href="http://openphoto.net/gallery/image.html?image_id=12122&image_size=1"><img src="http://openphoto.net/volumes/sizes/epoupaert/12122/1.jpg" /></a>
+			</div>
+			<div class="swipe-row-element"> <!-- 6 -->
+				<a href="http://openphoto.net/gallery/image.html?image_id=12762&image_size=1"><img src="http://openphoto.net/volumes/sizes/mike/12762/1.jpg" /></a>
+			</div>
+			<div class="swipe-row-element"> <!-- 7 -->
+				<a href="http://openphoto.net/gallery/image.html?image_id=15299&image_size=1"><img src="http://openphoto.net/volumes/sizes/lello/15299/1.jpg" /></a>
+			</div>
+			<div class="swipe-row-element"> <!-- 8 -->
+				<a href="http://openphoto.net/gallery/image.html?image_id=15747&image_size=1"><img src="http://openphoto.net/volumes/sizes/maartenvanderlinde/15747/1.jpg" /></a>
+			</div>
+			<div class="swipe-row-element"> <!-- 9 -->
+				<a href="http://openphoto.net/gallery/image.html?image_id=16003&image_size=1"><img src="http://openphoto.net/volumes/sizes/michelev/16003/1.jpg" /></a>
+			</div>
+			<div class="swipe-row-element"> <!-- 10 -->
+				<a href="http://openphoto.net/gallery/image.html?image_id=18798&image_size=1"><img src="http://openphoto.net/volumes/sizes/shippuden/18798/1.jpg" /></a>
+			</div>
+			<div class="swipe-row-element"> <!-- 11 -->
+				<a href="http://openphoto.net/gallery/image.html?image_id=22396&image_size=1"><img src="http://openphoto.net/volumes/sizes/sarabbit/22396/1.jpg" /></a>
+			</div>
+			<div class="swipe-row-element"> <!-- 12 -->
+				<a href="http://openphoto.net/gallery/image.html?image_id=22866&image_size=1"><img src="http://openphoto.net/volumes/sizes/mike/22866/1.jpg" /></a>
+			</div>
+			<div class="swipe-row-element"> <!-- 13 -->
+				<a href="http://openphoto.net/gallery/image.html?image_id=22879&image_size=1"><img src="http://openphoto.net/volumes/sizes/mike/22879/1.jpg" /></a>
+			</div>
+			<div class="swipe-row-element"> <!-- 14 -->
+				<a href="http://openphoto.net/gallery/image.html?image_id=24569&image_size=1"><img src="http://openphoto.net/volumes/sizes/sarabbit/24569/1.jpg" /></a>
+			</div>
+		</div>
+		<h3>Lesson 3 Material</h3>
+		<div class="swipe-row">
+			<div class="swipe-row-element"> <!-- 1 -->
+				<a href="http://openphoto.net/gallery/image.html?image_id=11187&image_size=1"><img src="http://openphoto.net/volumes/sizes/bmanojel/11187/1.jpg" /></a>
+			</div>
+			<div class="swipe-row-element"> <!-- 2 -->
+				<a href="http://openphoto.net/gallery/image.html?image_id=7081&image_size=1"><img src="http://openphoto.net/volumes/sizes/laurenz/7081/1.jpg" /></a>
+			</div>
+			<div class="swipe-row-element"> <!-- 3 -->
+				<a href="http://openphoto.net/gallery/image.html?image_id=10827&image_size=1"><img src="http://openphoto.net/volumes/sizes/prysme/10827/1.jpg" /></a>
+			</div>
+			<div class="swipe-row-element"> <!-- 4 -->
+				<a href="http://openphoto.net/gallery/image.html?image_id=11182&image_size=1"><img src="http://openphoto.net/volumes/sizes/bmanojel/11182/1.jpg" /></a>
+			</div>
+			<div class="swipe-row-element"> <!-- 5 -->
+				<a href="http://openphoto.net/gallery/image.html?image_id=12122&image_size=1"><img src="http://openphoto.net/volumes/sizes/epoupaert/12122/1.jpg" /></a>
+			</div>
+			<div class="swipe-row-element"> <!-- 6 -->
+				<a href="http://openphoto.net/gallery/image.html?image_id=12762&image_size=1"><img src="http://openphoto.net/volumes/sizes/mike/12762/1.jpg" /></a>
+			</div>
+			<div class="swipe-row-element"> <!-- 7 -->
+				<a href="http://openphoto.net/gallery/image.html?image_id=15299&image_size=1"><img src="http://openphoto.net/volumes/sizes/lello/15299/1.jpg" /></a>
+			</div>
+			<div class="swipe-row-element"> <!-- 8 -->
+				<a href="http://openphoto.net/gallery/image.html?image_id=15747&image_size=1"><img src="http://openphoto.net/volumes/sizes/maartenvanderlinde/15747/1.jpg" /></a>
+			</div>
+			<div class="swipe-row-element"> <!-- 9 -->
+				<a href="http://openphoto.net/gallery/image.html?image_id=16003&image_size=1"><img src="http://openphoto.net/volumes/sizes/michelev/16003/1.jpg" /></a>
+			</div>
+			<div class="swipe-row-element"> <!-- 10 -->
+				<a href="http://openphoto.net/gallery/image.html?image_id=18798&image_size=1"><img src="http://openphoto.net/volumes/sizes/shippuden/18798/1.jpg" /></a>
+			</div>
+			<div class="swipe-row-element"> <!-- 11 -->
+				<a href="http://openphoto.net/gallery/image.html?image_id=22396&image_size=1"><img src="http://openphoto.net/volumes/sizes/sarabbit/22396/1.jpg" /></a>
+			</div>
+			<div class="swipe-row-element"> <!-- 12 -->
+				<a href="http://openphoto.net/gallery/image.html?image_id=22866&image_size=1"><img src="http://openphoto.net/volumes/sizes/mike/22866/1.jpg" /></a>
+			</div>
+			<div class="swipe-row-element"> <!-- 13 -->
+				<a href="http://openphoto.net/gallery/image.html?image_id=22879&image_size=1"><img src="http://openphoto.net/volumes/sizes/mike/22879/1.jpg" /></a>
+			</div>
+			<div class="swipe-row-element"> <!-- 14 -->
+				<a href="http://openphoto.net/gallery/image.html?image_id=24569&image_size=1"><img src="http://openphoto.net/volumes/sizes/sarabbit/24569/1.jpg" /></a>
+			</div>
+		</div>
+	</div>
+</BODY>
+</HTML>
