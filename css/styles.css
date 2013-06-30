@@ -1,0 +1,109 @@
+/*
+ *	This is the expanding-div
+ *	definition area
+ *	=====================
+ * 	Codes here are specific to the expanding
+ * 	accordian type element code.
+*/
+.expanding-div {
+	width: 20em;
+	height: 20em;
+	transition: all 0.5s linear;
+	-webkit-transition: all 0.5s linear;
+	border: 1px solid black;
+	overflow: hidden;
+	background-color: white;
+	z-index: 10000;
+}
+/*
+.expanding-div:hover {
+	width: 40em;
+	height: 20em;
+	background-color: white;
+	z-index: 1200;
+}
+*/
+/*
+.expanding-div * {
+	z-index: 1300;
+}
+.expanding-div > * {
+	width: 400px;
+}
+*/
+.positioner-div {
+	width: 20em;
+	max-width: 20em;
+/*	float: left;*/
+	margin: 1em;
+	background-color: white;
+	z-index: 9;
+	display: inline-block;
+}
+.left {
+	text-align: left;
+}
+/*
+ * 	This area covers some basic css
+ * 	intended to make the above code
+ * 	look good in some kind of 
+ * 	context
+ * 	
+*/
+body {
+	background-image:url("../images/background.jpg");
+}
+.main-page {
+	z-index: 20;
+	background-color: white;
+	display: inline-block;
+	width: 500px;
+}
+
+.colored-box {
+	width: 4em;
+	height: 4em;
+	position: absolute;
+}
+.colored-box:nth-child(1) {
+	background-color: red;
+	top: 10em;
+	left: 2em;
+	z-index: 700;
+}
+.colored-box:nth-child(2) {
+	background-color: orange;
+	top: 11em;
+	left: 3em;
+	z-index: 600;
+}
+.colored-box:nth-child(3) {
+	background-color: yellow;
+	top: 12em;
+	left: 4em;
+	z-index: 500;
+}
+.colored-box:nth-child(4) {
+	background-color: green;
+	top: 13em;
+	left: 5em;
+	z-index: 400;
+}
+.colored-box:nth-child(5) {
+	background-color: blue;
+	top: 14em;
+	left: 6em;
+	z-index: 300;
+}
+.colored-box:nth-child(6) {
+	background-color: indigo;
+	top: 15em;
+	left: 7em;
+	z-index: 200;
+}
+.colored-box:nth-child(7) {
+	background-color: violet;
+	top: 16em;
+	left: 8em;
+	z-index: 100;
+}
