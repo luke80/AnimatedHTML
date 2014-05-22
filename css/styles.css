@@ -1,10 +1,3 @@
-/*
- *	This is the expanding-div
- *	definition area
- *	=====================
- * 	Codes here are specific to the expanding
- * 	accordian type element code.
-*/
 .expanding-div {
 	width: 20em;
 	height: 20em;
@@ -13,27 +6,24 @@
 	border: 1px solid black;
 	overflow: hidden;
 	background-color: white;
-	z-index: 10000;
+	z-index: 10;
 }
-/*
-.expanding-div:hover {
+.expanding-div/*:hover*/ {
 	width: 40em;
 	height: 20em;
 	background-color: white;
 	z-index: 1200;
 }
-*/
-/*
 .expanding-div * {
 	z-index: 1300;
 }
 .expanding-div > * {
 	width: 400px;
 }
-*/
+
 .positioner-div {
-	width: 20em;
-	max-width: 20em;
+	width: 200px;
+	max-width: 200px;
 /*	float: left;*/
 	margin: 1em;
 	background-color: white;
@@ -43,18 +33,11 @@
 .left {
 	text-align: left;
 }
-/*
- * 	This area covers some basic css
- * 	intended to make the above code
- * 	look good in some kind of 
- * 	context
- * 	
-*/
 body {
-	background-image:url("../images/background.jpg");
+	background-image:url(../wordpress/wp-content/themes/twentyeleven/images/headers/chessboard.jpg);
 }
 .main-page {
-	z-index: 20;
+	z-index: 2;
 	background-color: white;
 	display: inline-block;
 	width: 500px;
@@ -69,41 +52,41 @@ body {
 	background-color: red;
 	top: 10em;
 	left: 2em;
-	z-index: 700;
+	z-index: 70;
 }
 .colored-box:nth-child(2) {
 	background-color: orange;
 	top: 11em;
 	left: 3em;
-	z-index: 600;
+	z-index: 60;
 }
 .colored-box:nth-child(3) {
 	background-color: yellow;
 	top: 12em;
 	left: 4em;
-	z-index: 500;
+	z-index: 50;
 }
 .colored-box:nth-child(4) {
 	background-color: green;
 	top: 13em;
 	left: 5em;
-	z-index: 400;
+	z-index: 40;
 }
 .colored-box:nth-child(5) {
 	background-color: blue;
 	top: 14em;
 	left: 6em;
-	z-index: 300;
+	z-index: 30;
 }
 .colored-box:nth-child(6) {
 	background-color: indigo;
 	top: 15em;
 	left: 7em;
-	z-index: 200;
+	z-index: 20;
 }
 .colored-box:nth-child(7) {
 	background-color: violet;
 	top: 16em;
 	left: 8em;
-	z-index: 100;
+	z-index: 10;
 }
